@@ -1,4 +1,4 @@
-# Android_Attendance_Management_System by Kota Adithya Reddy
+# Android_Attendance_Management_System
 An Android App for taking Attendance..
 
 
