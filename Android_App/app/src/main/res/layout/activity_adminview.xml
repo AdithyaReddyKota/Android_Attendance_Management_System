@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greybg"
+    tools:context=".AdminviewActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Login Successful"
+        android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"
+        android:drawablePadding="20dp"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:background="#ADDAA3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select any one of the following options..!"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/text1">
+    </TextView>
+
+    <Button
+        android:id="@+id/btnaddstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:layout_below="@id/text2"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btndelstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Student"
+        android:layout_below="@id/btnaddstudent"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnaddstaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Staff"
+        android:layout_below="@id/btndelstudent"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btndelstaff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Staff"
+        android:layout_below="@id/btnaddstaff"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/viewattendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Student Attendance"
+        android:layout_below="@id/btndelstaff"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/addsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:layout_below="@id/viewattendance"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@id/addsub"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

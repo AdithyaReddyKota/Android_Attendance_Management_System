@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greybg"
+    tools:context="com.example.miniproj.Attendancelist">
+
+    <ListView
+        android:id="@+id/attendenceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/black"
+        android:dividerHeight="1.5dp"
+        android:padding="10dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/Submit_attendence"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="submit"
+            android:backgroundTint="#BAB5E8"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            style="?android:textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Reset"
+            android:backgroundTint="#BAB5E8"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            style="?android:textAppearanceMedium"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="attendence_empty"
+        android:textStyle="bold"
+        android:id="@+id/emptyAttendenceSheet"
+        />
+
+</RelativeLayout>

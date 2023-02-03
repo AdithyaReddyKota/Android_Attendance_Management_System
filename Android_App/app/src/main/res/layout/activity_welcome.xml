@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".WelcomeActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="ANDROID"
+        android:background="#ADDAA3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+
+        android:textSize="20sp"
+        android:layout_below="@id/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_centerHorizontal="true"
+
+        android:text="ATTENDANCE SYSTEM"
+        android:background="#ADDAA3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/text"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="200dp"
+            android:src="@drawable/att"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"
+        android:text=" Admin   "
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/text1"/>
+    <Button
+        android:id="@+id/btnstaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:text=" Staff    "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnadmin"/>
+    <Button
+        android:id="@+id/btnstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_people_24"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text=" Student"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnstaff"/>
+
+</RelativeLayout>

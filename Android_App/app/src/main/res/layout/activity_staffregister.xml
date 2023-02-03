@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greybg"
+    tools:context=".StaffregisterActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#ADDAA3"
+        android:text="Staff Register"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"
+        android:drawablePadding="20dp"
+        android:hint="Name"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/text1"/>
+    <EditText
+        android:id="@+id/semail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"
+        android:drawablePadding="20dp"
+        android:hint="E Mail"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/sname"/>
+
+    <EditText
+        android:id="@+id/susername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_admin_panel_settings_24"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/semail"/>
+
+    <EditText
+
+        android:id="@+id/spassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/susername"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_password_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:padding="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+
+        android:id="@+id/srepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_password_24"
+        android:drawablePadding="20dp"
+        android:hint="Enter Register Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/black" />
+
+
+
+    <Button
+        android:id="@+id/sbtnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/srepassword"/>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Existing User ? Click Sign in Below..!"
+        android:layout_below="@id/sbtnsignup"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+
+    <Button
+        android:id="@+id/sbtnsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=" Sign in Page.."
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/sbtnsignup" />
+
+</RelativeLayout>

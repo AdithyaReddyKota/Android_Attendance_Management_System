@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greybg"
+    tools:context=".AddstudentActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:background="#ADDAA3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="ADD STUDENT">
+    </TextView>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="Roll Num"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course    :"
+            android:layout_below="@id/roll"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:id="@+id/course" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/roll"
+            android:layout_toRightOf="@id/course"
+            android:id="@+id/Coursespinner"
+            android:layout_marginTop="20dp">
+        </Spinner>
+
+
+        <TextView
+            android:id="@+id/sem"
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Semester:"
+            android:textSize="20sp"
+            android:layout_below="@id/course"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course"
+            android:layout_toRightOf="@id/sem"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/semspinner"
+            android:layout_marginTop="15dp">
+        </Spinner>
+    <TextView
+        android:id="@+id/sec"
+        style="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Section:"
+        android:textSize="20sp"
+        android:layout_below="@id/sem"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sem"
+        android:layout_toRightOf="@id/sec"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/secspinner"
+        android:layout_marginTop="15dp">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#BAB5E8"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="ADD Student"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/sec"/>
+
+
+
+</RelativeLayout>

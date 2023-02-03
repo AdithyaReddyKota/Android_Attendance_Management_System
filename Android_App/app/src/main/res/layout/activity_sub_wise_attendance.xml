@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubWiseAttendance">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:id="@+id/Student_subject"
+            android:textSize="20sp"
+
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Student_classes_attended"
+            android:textSize="20sp"
+            android:text="Attended"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Student_classes_held"
+            android:textSize="20sp"
+            android:text="Held"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Student_attendence_percent"
+            android:textSize="20sp"
+            android:text="Total %"
+
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_students_attenence_details_listview"
+        android:dividerHeight="1.5dp"
+        android:layout_below="@id/layout"
+        android:padding="2dp">
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_empty_attendence_details"
+        android:text="empty_list_text"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

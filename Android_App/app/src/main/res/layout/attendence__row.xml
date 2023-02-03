@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Name"
+    android:id="@+id/student_attendence_name"
+    android:layout_alignParentStart="true"
+    android:padding="5dp"
+    android:textSize="25sp"
+    android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/student_attendence_name"
+        android:id="@+id/linear_layout">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Roll No"
+        android:id="@+id/student_attendence_regNo"
+        android:layout_marginRight="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="course"
+        android:id="@+id/student_attendence_Cource"
+        android:layout_marginBottom="5dp"
+        />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/student_attendence_name"
+        android:layout_marginStart="50dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <RadioButton
+            android:id="@+id/present_radio"
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="P"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/absent_radio"
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
