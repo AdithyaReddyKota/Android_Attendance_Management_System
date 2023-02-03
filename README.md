@@ -2,7 +2,7 @@
 An Android App for taking Attendance..
 
 
-Android attendance management system deals with the maintenance of thestudent’s attendance details. 
+Android attendance management system deals with the maintenance of the student’s attendance details. 
 It generates the attendance of the student on basis of presence in class. 
 It is maintained on a daily basis of their attendance. 
 The admin will be provided with a separate username and password to make the staff’s status. 
